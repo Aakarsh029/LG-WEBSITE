@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id" content="242027652015-1jjfj1vtp3ftff6o39r3k904ug77ucki.apps.googleusercontent.com">
+    <title>LG.com</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="navbar_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script href="script.js" ></script>
+    <script href="../home page/signin.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0/firebase.js"></script>
+    <script>
+      var config = {
+        apiKey: "AIzaSyDv-K_CwAaYXOrTDygM2YKqxHnqSO0QAcQ",
+        authDomain: "lg-webapp.firebaseapp.com",
+      };
+      firebase.initializeApp(config);
+    </script>
+
+    <style>
+        *{
+            margin: 0%;
+            padding: 0.5px;
+           width: 100%;
+        }
+        body{
+            background-color:white;
+        }
+
+        .nitish {
+            border: 5px solid rgb(62, 41, 41);
+            height: 12vh;
+        }
+        .height1 {
+            height: 87vh;
+        }
+        .tag {
+            text-align: center;
+            margin-top: 4%;
+            margin-bottom: 1.5vh;
+        }
+
+        .design {
+            border: 1px solid black;
+            border-radius: 3%;
+        }
+
+        .contact{
+            margin-top: 5vh;
+            width: 100%;
+            display: flex;
+            height: auto;
+           /* border: 2px solid black;*/
+        }
+        .contact_card{
+            width: 23%;
+            height: 100%;
+            margin-left: 1%;
+            margin-right: 1%;
+           /* border: 2px solid black;*/
+        }
+        .head{
+            width: 100%;
+            height: auto;
+        }
+        .footer{
+            width: 100%;
+            background-color:rgb(4, 4, 74);
+            margin-top: 10vh;
+        }
+        .border2{
+            border: 0px;
+        }
+
+        .nav text{
+            font-size: small;
+            color: sandybrown;
+        }
+        .colr{
+            background-color: rgb(44, 32, 114);
+        }
+        .c{
+            background-color:rgb(4, 4, 74);
+        }
+        .text{
+            margin-left: 10%;
+            margin-bottom: -1.5vh;
+            margin-right: 10%;
+            color: white;
+            font-size: large;
+        }
+        .text1{
+           font-size: larger;
+            color:#def172;
+            margin-left: 22%;
+            margin-right: 10%;
+        }
+        .text2{
+            font-size: larger;
+            margin-left: 5%;
+        }
+        .copyright{
+            height: 5vh;
+            width: 100%;
+            background-color: yellow;
+        }
+        .copyright_text{
+            text-align: center;
+            font-weight: bold;
+            font-size: large;
+            color: rgb(18, 18, 98);
+        }
+       .adjust{
+        width: 30%;
+       }
+       .mar{
+        width:30%;
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+       }
+       .tet{
+        font-size: large;
+       }
+      .tep{
+      margin-left: 3%;
+      font-size:larger;
+      font-style: italic;
+      font-weight: bold;
+}
+/*......................................*/  
+.Television img{
+    border-radius: 3%;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+    width: 430px;
+    height: 380px;
+
+
+}
+.Television:hover img {
+    -webkit-transform: scale(1.3);
+    background-image: url(macbook-pro-with-box-scaled.jpg);
+	transform: scale(0.85);
+    content: "hello";
+}
+
+.Refrigerators img{
+    border-radius: 3%;
+    margin-bottom: 40px;
+    height: 500px;
+    width:95%;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+}
+.Refrigerators:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(0.85);
+    content: "hello";
+}
+.laptop img{
+    border-radius: 3%;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+    margin-bottom: 40px;
+}
+.laptop:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(0.85);
+    content: "hello";
+}
+.collers img{
+    border-radius: 3%;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+    width: 430px;
+    height: 380px;
+    margin-bottom: 40px;
+}
+.collers:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(0.85);
+    content: "hello";
+}
+/*....................*/
+
+ .hov:hover{
+    color: yellowgreen;
+    font-size: large;
+ }
+ .hove:hover{
+    color: red;
+ }
+ .hov_img:hover{
+   background-color: green;
+   color: black;
+   font-weight: bold;
+   font-style: italic;
+ }
+ .box{
+    margin-bottom: 1.5rem;
+        padding-left: 1.5rem;
+ }
+ .img_size1{
+    width: 100%;
+    height: 50%;
+ }
+.containeer{
+    width: 100%;
+    height:90%;
+    margin-bottom: 7vh;
+   
+    display: flex;
+}
+.big_box{
+ 
+    width: 100%;
+    height: 100%;
+    margin: 0.2%;
+}
+.image_box{
+    display: flex;
+}
+.image_box.a{
+    height:100%
+}
+.land_mov_height{
+    margin-top: 3rem;
+    height: 80vh;
+}
+.land_mov_height1{
+    margin-top: 3 rem;
+    margin-bottom: 7vh;
+    height: 50vh;
+}
+.card-text{
+    text-align: center;
+    justify-items: center;
+    padding-top: 3.5vh;
+}
+.card_dis{
+    margin-top: 9.3rem;
+}
+.img_card_dis{
+    margin-top: 1.5rem;
+}
+.img_set{
+padding-bottom: 0%;
+}
+.icon1{
+    height:5%;
+    width: 50%;
+    margin-right: 0%;
+}
+.tep{
+    margin-left: 0%;
+}
+.icon_box{
+    margin: 0%;
+}
+.navhead{
+    margin-top: -0.6rem;
+}
+.margin_box{
+    padding-left: 15vh;
+    padding-right: 15vh;
+}
+.resize{
+    padding-left: 17vh;
+    padding-right: 17vh;
+}
+.border{
+    border: 1px solid whitesmoke;
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+.success{
+    margin-bottom: 0;
+    justify-content: center;
+}
+.success1{
+    margin-bottom: 0;
+    color: brown;
+    width: 40%;
+    justify-content: center;
+  
+}
+.hov1:hover{
+    color: blue;
+    font-family: initial;
+    text-underline-position: under;
+}
+.margin_bottom{
+    margin-bottom: 5vh;
+}
+.box1{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.icon2{
+    height:20%;
+    width:20%;
+    margin-left: 20%;
+}
+.link_text{
+    color: green;
+}
+.link_text:hover{
+    color: blue;
+}
+.nav_icon1{
+    padding: 0%;
+    height:30%;
+    width: 40%;
+    border-radius: 50%;
+}
+.nav_dis{
+    display: flex;
+}
+
+.logohov1{
+    height: 90%;
+    width:90%;
+    background-color:whitesmoke;
+    border-radius: 50%;
+}
+.logohov1:hover{
+    background-color: pink;
+}
+.logohov{
+    height: 60%;
+    width:60%;
+    background-color:whitesmoke;
+    border-radius: 50%;
+}
+.logohov:hover{
+    border-radius:50%;
+    background-color:pink;
+}
+.para_gap{
+   padding-left: 10px;
+    padding-right: 4px;
+    border-radius: 15px;
+}
+.newset{
+    background: rgb(233, 224, 224);
+    margin-top: -15vh;
+    padding-top: 20vh;
+}
+
+    </style>
+</head>
+
+<body>
+<!-- Sticky navbar-->
+
+<nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="../docs/index.html">LG Electronics</a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="../TV/index_tv.html">TV/Audio</a></li>
+        <li><a href="../refrigerator/index_ref.html">Refrigerator</a></li>
+        <li><a href="../coller/index_cooler.html">AC/Cooler</a></li>
+        <li><a href="../homeAppliances/index_app.html">HomeAppliances</a></li>
+        <li><a href="../mobile/index_mob.html">Laptop/Monitor</a></li>
+        <li><a href="../mobile/index_mob.html">Mobile</a></li>
+        <li style="margin-left: 50px;"><a href="../form/index_form.html">LOGIN</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+
+    </div>
+  </nav>
+  <div class="about"></div>
+  <div class="banner"></div>
+
+  <div class="tag newset">
+    <h1>Welcome to LG Electronics</h1>
+    <h3>LG Provides you the best Quality product with proper discount.</h3>
+    <h4>We are providing you the best quality of products with home delievery with full warranty<br>Browse with ease,Shop with confidence.</h4>.</p>
+</div>
+
+    <!-- As a heading -->
+
+
+   <div class="hero">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="land1.jpg" class="d-block w-100 height1" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="land2.jpg" class="d-block w-100 height1" alt="...">
+          </div>
+          <div class="carousel-item " data-bs-interval="3000">
+            <img src="land_tv3.png" class="d-block w-100 height1" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
+
+
+<!--latest products list-->
+
+
+    <div class="tag">
+        <h1><strong>LG Picks for you</strong></h1>
+    </div>
+
+    <div class="row row-cols-2 row-cols-md-4 g-3 box">
+
+        <div class="col border ">
+            <div class="Television ">
+               <a href="../refrigerator/index_ref.html"> <img src="lg.webp" class="card-img-top  " alt="..."></a>
+               <p class="card-text ">The LG InstaView Door-in-Door™ Refrigerator significantly reduces cold air loss by keeping it where it matters most, on the inside. More cold air means more peace of mind that your food will stay fresher for longer.</p>
+               <div class="containeer success">
+                <a href="../refrigerator/index_ref.html" class="success1 link_text"><strong>View Details</strong> </a>  
+            </div> 
+            </div>
+        </div>
+
+        <div class="col border">
+            <div class="Television">
+                <a href="../TV/index_tv.html"><img src="lg2.webp" class="card-img-top " alt="..."></a>
+                <p class="card-text">The LG 4K UHD TV now comes with AI ThinQ built-in, along with Ultra high-definition picture quality to give you a complete viewing experience. Explore the full range of LG UHD TVs below.</p>
+                <div class="containeer success">
+                    <a href="../TV/index_tv.html" class="success1 link_text"><strong>View Details</strong> </a>  
+                </div> 
+            </div>
+        </div>
+
+        <div class="col border">
+            <div class="Television">
+                <a href="../homeAppliances/index_app.html"><img src="lg3.png" class="card-img-top" alt="..."></a>  
+                <p class="card-text">20L Solo with Glass Doorhome appliances with full saftey at low price Explore the full range of LG home appliances below.<br>
+                    *Get 5% off on your first purchase
+                    <br>price: ₹7449</p> 
+                <div class="containeer success">
+                    <a href="../homeAppliances/index_app.html" class="success1 link_text"><strong>View Details</strong> </a>  
+                </div> 
+            </div>
+        </div>
+       
+        <div class="col border">
+            <div class="Television">
+                <a href="../mobile/index_mob.html"><img src="lg4.png" class="card-img-top" alt="..."></a>  
+                <p class="card-text">With LG UltraWide™ Monitors, you will discover a new world of productivity. See more on your screen, with multiple different viewpoints and the ability to see multiple documents at a time.</p> 
+                <div class="containeer success">
+                    <a href="../mobile/index_mob.html" class="success1 link_text"><strong>View Details</strong> </a>  
+                </div> 
+            </div>
+        </div>
+        
+    </div>
+
+
+<!-----------------------------------------------------------------tv section----------------------------------------------------------------->
+
+<div class="tag">
+    <h1><strong>TV/AUDIO</strong></h1>
+</div>
+
+
+<!--half slider pic-->
+
+<div class="containeer">
+    <div class="big_box image_box">
+            <a href="../TV/index_tv.html"><img src="half_land1.png" alt="..."></a>
+    </div>
+  </div>
+
+<!---product list-->
+
+
+    <div class="row row-cols-2 row-cols-md-4 g-2 box box1">
+
+        <div class="col border para_gap">
+            <div class="Television ">
+               <a href="../TV/index_tv.html"> <img src="tv2.png" class="card-img-top  " alt="..."></a>
+               <p class="card-text "><h3>Ultra Large TVs - Biggest TV of India.</h3><br>LG's Ultra Large TVs are essential for every home theatre, bringing you a wide-screen display to make you feel like you are in a cinema. </p>
+               <div class="containeer success">
+                <a href="../refrigerator/index_ref.html" class="success1 link_text"><strong>View</strong> </a>  
+            </div> 
+            </div>
+        </div>
+
+        <div class="col border para_gap">
+            <div class="Television">
+                <a href="../TV/index_tv.html"><img src="tv5.jpg" class="card-img-top " alt="..."></a>
+                <p class="card-text "><h3>LG SIGNATURE OLED</h3><br>Revolutionise the way you experience your favourite entertainment with LG Signature OLED TVs. Thanks to the innovation of 8K rollable TVs, every movie becomes a masterpiece. </p>
+                <div class="containeer success">
+                    <a href="../refrigerator/index_ref.html" class="success1 link_text"><strong>View </strong> </a>  
+                </div> 
+            </div>
+        </div>
+
+        <div class="col border para_gap">
+            <div class="Television">
+                <a href="../TV/index_tv.html"><img src="tv6.jpg" class="card-img-top" alt="..."></a>  
+                <p class="card-text para_gap"><h3>Buy Oled TVs</h3><br>OLED TVs take movies, tv shows and gaming to a different level. Packed with 4K resolution and even deeper shades of black, you'll enjoy every minute of your entertainment. </p> 
+                <div class="containeer success">
+                    <a href="../refrigerator/index_ref.html" class="success1 link_text"><strong>View </strong> </a>  
+                </div> 
+            </div>
+        </div>
+
+        <div class="col border para_gap">
+            <div class="Television">
+                <a href="../TV/index_tv.html"><img src="tv1.webp" alt="..."></a> 
+                <p class="card-text para_gap"><h3>Buy UHD 4K TVs</h3><br>The LG 4K UHD TV now comes with AI ThinQ built-in, along with Ultra high-definition picture quality to give you a complete viewing experience. </p>
+                <div class="containeer success">
+                    <a href="../refrigerator/index_ref.html" class="success1 link_text"><strong>View</strong> </a>  
+                </div> 
+            </div>
+        </div>
+
+    </div>
+
+
+<!--botton-->
+
+<div class="containeer">
+    <a href="../TV/index_tv.html" class="success1 hov1"><h6>*click on image</h6> </a>  
+</div> 
+
+<!--short discription-->
+<div class="tag margin_p">
+    <h1>LG Provides you the best Quality product with proper discount.</h1>
+    <h4>We are providing you the best quality of products with home delievery with full warranty<br>Browse with ease,Shop with confidence.</h4>.</p>
+</div>
+
+   <!--TV slider-->
+
+   <div class="hero">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="land_tv1.png" class="d-block w-100 height1" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="land_tv2.png" class="d-block w-100 height1" alt="...">
+          </div>
+          <div class="carousel-item " data-bs-interval="3000">
+            <img src="land_tv3.png" class="d-block w-100 height1" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
+
+
+
+    <!--The Best Technology-->
+
+
+    <div class="card-header margin_bottom">
+       <h1 class="card-text tag ">The Best LG Technologies</h1> 
+    </div>
+  
+
+    <div class="row row-cols-1 row-cols-md-3 g-4 box1 ">
+        <div class="col">
+          <div class="card">
+            <img src="best_pic1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">LG OLED TV</h5>
+              <p class="card-text"><h3>Enjoy Every Minute of joy with the Best OLED TV</h3></p>
+              <div class="containeer success">
+                <a href="../TV/index_tv.html" class="success1 link_text"><strong>View Details</strong> </a>  
+            </div> 
+            </div>
+          </div>
+        </div>
+      
+        <div class="col">
+          <div class="card">
+            <img src="best_pic3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">LG Microwave Ovens</h5>
+              <p class="card-text"><h3>Cook Healthy Food with the Latest LG Microwave Ovens.</h3></p>
+              <div class="containeer success">
+                <a href="#" class="success1 link_text"><strong>View Details</strong> </a>  
+            </div> 
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="best_pic2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">LG Air Purifiers</h5>
+              <p class="card-text"><h3>Breathe Cleaner Air with LG Air Purifiers.</h3></p>
+              <div class="containeer success">
+                <a href="../coller/index_cooler.html" class="success1 link_text"><strong>View Details</strong> </a>  
+            </div> 
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!----------------------------------------------------REFRIGERATOR SECTION---------------------------------------------------------------->
+
+    <!--heading-->
+    <div class="tag">
+        <h1><strong>REFRIGERATOR</strong></h1>
+    </div>
+
+<!---half landing page-->
+
+<div class="containeer">
+    <div class="big_box image_box">
+            <a href="../refrigerator/index_ref.html"><img src="refri_land1.png" alt="..."></a>
+    </div>
+  </div>
+
+
+<!-- product list -->
+<div class="row row-cols-2 row-cols-md-4 g-2 box box1">
+
+    <div class="col border">
+        <div class="Refrigerators">
+           <a href="../refrigerator/index_ref.html"> <img src="card_ref3.png" class="card-img-top " alt="..."></a>
+           <p class="card-text">185L,Smart Inverter Compressor Hygenic
+            price: ₹18799.</p>
+            <div class="containeer success">
+                <a href="../refrigerator/index_ref.html" class="success1 link_text"><strong>View Details</strong> </a>  
+            </div> 
+        </div>
+    </div>
+    <div class="col border">
+        <div class="Refrigerators">
+            <a href="../refrigerator/index_ref.html"><img src="card_ref2.png" class="card-img-top" alt="..."></a>
+            <p class="card-text">LG 260 L Frost Free Double Door Refrigerator in Shiny Steel Color
+               <br> price: ₹31349</p>
+               <div class="containeer success">
+                <a href="../refrigerator/index_ref.html" class="success1 link_text"><strong>View Details</strong> </a>  
+            </div> 
+        </div>
+    </div>
+    <div class="col border">
+        <div class="Refrigerators">
+            <a href="../refrigerator/index_ref.html"><img src="card_ref1.png" class="card-img-top" alt="..."></a>
+            <p class="card-text">Refrigerator with Hygiene ,Fresh™,DoorCooling
+               <br> price: ₹22298</p>
+               <div class="containeer success">
+                <a href="../refrigerator/index_ref.html" class="success1 link_text"><strong>View Details</strong> </a>  
+            </div> 
+        </div>
+    </div>
+    <div class="col border">
+        <div class="Refrigerators">
+            <a href="../refrigerator/index_ref.html"><img src="card_ref4.webp" class="card-img-top" alt="..."></a>
+            <p class="card-text">889 Ltr, Instaview Door-in-Door, French Door Side by Side
+                <br>price: ₹267949</p>
+                <div class="containeer success">
+                    <a href="../refrigerator/index_ref.html" class="success1 link_text"><strong>View Details</strong> </a>  
+                </div> 
+        </div>
+    </div>
+</div>
+
+<!-----Button------>
+
+
+
+<div class="containeer">
+    <a href="../refrigerator/index_ref.html" class="success1 hov1"><h6>*click on image</h6> </a>  
+</div> 
+
+<!--short discription-->
+<div class="tag margin_p">
+    <h1>LG Provides you the best Quality product with proper discount.</h1>
+    <h4>We are providing you the best quality of products with home delievery with full warranty<br>Browse with ease,Shop with confidence.</h4>.</p>
+</div>
+
+<!-----TV slider----->
+
+    <div id="carouselExampleInterval" class="carousel slide " data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img src="refri_slider1.png" class="d-block w-100 land_mov_height margin_slider" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="refri_slider2.png" class="d-block w-100 land_mov_height margin_slider" alt="...">
+          </div>
+          <div class="carousel-item " data-bs-interval="2000">
+            <img src="refri_slider3.png" class="d-block w-100 land_mov_height margin_slider" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      
+      
+      
+     
+     
+      
+    <!-------------------------------------------------------------AC/COLLER SECTION----------------------------------------------------------->
+
+     <!--heading-->
+    <div class="tag">
+        <h1><strong>AC/COLLER</strong></h1>
+    </div>
+
+
+    <!---half landing page-->
+
+    <div class="containeer">
+        <div class="big_box image_box">
+            <a href="../coller/index_cooler.html"><img src="ac_land1.png" alt="..."></a>
+        </div>
+    </div>
+
+
+  <!-- product list -->
+
+
+   <div class="row row-cols-2 row-cols-md-4 g-2 box box1">
+
+    <div class="col border">
+        <div class="collers">
+           <a href="../coller/index_cooler.html"> <img src="card_ac6.jfif" class="card-img-top " alt="..."></a> 
+           <div class="containeer success">
+            <a href="../refrigerator/index_ref.html" class="success1 link_text"><strong>View Details</strong> </a>  
+        </div>   
+        </div>
+    </div>
+    <div class="col border">
+        <div class="collers">
+            <a href="../coller/index_cooler.html"><img src="card_ac7.jfif" class="card-img-top" alt="..."></a>
+            <div class="containeer success">
+                <a href="../refrigerator/index_ref.html" class="success1 link_text"><strong>View Details</strong> </a>  
+            </div> 
+            </div>
+        </div>
+   
+    <div class="col border">
+        <div class="collers">
+            <a href="../coller/index_cooler.html"><img src="card_ac3.jfif" class="card-img-top" alt="..."></a>
+            <div class="containeer success">
+                <a href="../refrigerator/index_ref.html" class="success1 link_text"><strong>View Details</strong> </a>  
+            </div> 
+        </div>
+    </div>
+    <div class="col border">
+        <div class="collers">
+            <a href="../coller/index_cooler.html"><img src="card_ac4.jfif" class="card-img-top" alt="..."></a>
+            <div class="containeer success">
+                <a href="../refrigerator/index_ref.html" class="success1 link_text"><strong>View Details</strong> </a>  
+            </div> 
+        </div>
+    </div>
+    </div>
+</div>
+
+
+<!----botton---->
+
+
+
+<div class="containeer">
+    <a href="../coller/index_cooler.html" class="success1 hov1"><h6>*click on image</h6> </a>  
+</div> 
+
+
+<!--short discription-->
+<div class="tag margin_p">
+    <h1>LG Provides you the best Quality product with proper discount.</h1>
+    <h4>We are providing you the best quality of products with home delievery with full warranty<br>Browse with ease,Shop with confidence.</h4></p>
+</div>
+
+ <!--AC/COLLER slider-->
+
+ <div id="carouselExampleInterval" class="carousel slide " data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="2000">
+        <img src="ac_slider1.png" class="d-block w-100 land_mov_height margin_slider" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="ac_slider2.png" class="d-block w-100 land_mov_height margin_slider" alt="...">
+      </div>
+      <div class="carousel-item " data-bs-interval="2000">
+        <img src="ac_slider3.png" class="d-block w-100 land_mov_height margin_slider" alt="...">
+      </div>
+    </div>
+    
+  </div>
+
+
+    <!--The Best Technology in AC-->
+
+
+<div class="card-header margin_bottom"">
+        <h1 class="card-text tag ">Updated Products</h1> 
+     </div>
+</div>
+
+<div class="row row-cols-1 row-cols-md-4 g-4 box1 ">
+
+
+    <div class="col">
+      <div class="card">
+        <img src="bottom_best1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">LG Monitor</h5>
+          <p class="card-text"><h3>Best Gaming Monitor</h3></p>
+          <div class="containeer success">
+            <a href="../mobile/index_mob.html" class="success1 link_text"><strong>View</strong> </a> 
+             
+        </div> 
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+        <div class="card">
+          <img src="bottom_best4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">LG projectors</h5>
+            <p class="card-text"><h3>Best LG projectors</h3></p>
+            <div class="containeer success">
+              <a href="../mobile/index_mob.html" class="success1 link_text"><strong>View </strong> </a>  
+          </div> 
+          </div>
+        </div>
+      </div>
+  
+    <div class="col">
+      <div class="card">
+        <img src="bottom_best2.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">LG Laptop</h5>
+          <p class="card-text"><h3>LG Lightest Laptop</h3></p>
+          <div class="containeer success">
+            <a href="../mobile/index_mob.html" class="success1 link_text"><strong>View </strong> </a>  
+        </div> 
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="bottom_best3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">LG Medical Monitor</h5>
+          <p class="card-text"><h3>Medical  Monitors.</h3></p>
+          <div class="containeer success">
+            <a href="../mobile/index_mob.html" class="success1 link_text"><strong>View </strong> </a>  
+        </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+
+
+  <!--------------------------------------------------LAPTOP/MONITOR------------------------------------------------------------------------>
+   <!--heading-->
+<div class="tag">
+    <h1><strong>LAPTOP/MONITOR/PROJECTOR</strong></h1>
+</div>
+
+
+ <!---half landing page-->
+
+<div class="containeer">
+    <div class="big_box image_box">
+            <a href="../mobile/index_mob.html"><img src="land_lap1.png" alt="..."></a>
+    </div>
+</div>
+
+
+ <!-- product list -->
+   
+<div class="row row-cols-2 row-cols-md-4 g-3  box box1">
+
+    <div class="col border">
+            <div class="laptop">
+                <a href="../mobile/index_mob.html"><img src="card_lap1.jpg" class="card-img-top " alt="..."></a>
+                <p class="card-text">Get the full picture and fully immersed visual with UltraWide Monitors</p>
+                <div class="containeer success">
+                    <a href="../refrigerator/index_ref.html" class="success1 link_text"><strong>View Details</strong> </a>  
+                </div> 
+            </div>
+    </div>
+    <div class="col border">
+            <div class="laptop">
+                <a href="../mobile/index_mob.html"><img src="card_lap2.webp" class="card-img-top" alt="..."></a>
+                <p class="card-text">See more,Do more,and dominate your opponents with LG Gaming Monitors</p>
+                <div class="containeer success">
+                    <a href="../refrigerator/index_ref.html" class="success1 link_text"><strong>View Details</strong> </a>  
+                </div> 
+            </div>
+    </div>
+    <div class="col border">
+            <div class="laptop">
+                <a href="../mobile/index_mob.html"><img src="card_lap4.jpg" class="card-img-top" alt="..."></a>
+                <p class="card-text">A richer,brighter,more detailed view here</p>
+                <div class="containeer success">
+                    <a href="../refrigerator/index_ref.html" class="success1 link_text"><strong>View Details</strong> </a>  
+                </div> 
+            </div>
+    </div>
+    <div class="col border">
+            <div class="laptop">
+                <a href="../mobile/index_mob.html"><img src="card_lap3.webp" class="card-img-top" alt="..."></a>
+                <p class="card-text">Get cinema-level picture quality with crisp image </p>
+                <div class="containeer success">
+                    <a href="../refrigerator/index_ref.html" class="success1 link_text"><strong>View Details</strong> </a>  
+                </div> 
+            </div>
+    </div>
+</div>
+
+   
+<!----botton---->
+
+
+
+<div class="containeer">
+    <a href="#" class="success1 hov1"><h6>*click on image</h6> </a>  
+</div> 
+
+<!--short discription-->
+<div class="tag margin_p">
+    <h1>LG Provides you the best Quality product with proper discount.</h1>
+    <h4>We are providing you the best quality of products with home delievery with full warranty<br>Browse with ease,Shop with confidence.</h4>.</p>
+</div>
+
+
+<!--LAPTOP/MONITOR slider-->
+
+<div id="carouselExampleInterval" class="carousel slide " data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="2000">
+        <img src="sattic page_lap1.png" class="d-block w-100 land_mov_height margin_slider" alt="...">
+      </div>
+    </div>
+</div>
+
+
+
+
+<!-------------------------------------------------------------------MOBILE------------------------------------------------------------>
+ 
+
+
+
+<!---half landing page-->
+
+<div class="containeer">
+    <div class="big_box image_box">
+            <a href="../mobile/index_mob.html"><img src="discount1.png" alt="..."></a>
+    </div>
+</div>
+
+
+<div class="tag">
+    <h1><strong>MOBILE</strong></h1>
+</div>
+
+
+
+<!----product list---->
+<div class="row row-cols-2 row-cols-md-4 g-3  box">
+
+        <div class="col border">
+            <div class="laptop">
+                <a href="../mobile/index_mob.html"><img src="card_mob1.png" class="card-img-top " alt="..."></a>
+                <div class="containeer success">
+                    <a href="../refrigerator/index_ref.html" class="success1 link_text"><strong>View Details</strong> </a>  
+                </div> 
+            </div>
+        </div>
+        <div class="col border">
+            <div class="laptop">
+                <a href="../mobile/index_mob.html"><img src="card_mob2.png" class="card-img-top" alt="..."></a>
+                <div class="containeer success">
+                    <a href="../refrigerator/index_ref.html" class="success1 link_text"><strong>View Details</strong> </a>  
+                </div> 
+            </div>
+        </div>
+        <div class="col border">
+            <div class="laptop">
+                <a href="../mobile/index_mob.html"><img src="card_mob3.png" class="card-img-top" alt="..."></a>
+                <div class="containeer success">
+                    <a href="../refrigerator/index_ref.html" class="success1 link_text"><strong>View Details</strong> </a>  
+                </div> 
+            </div>
+        </div>
+        <div class="col border">
+            <div class="laptop">
+                <a href="../mobile/index_mob.html"><img src="card_mob4.png" class="card-img-top" alt="..."></a>
+                <div class="containeer success">
+                    <a href="../refrigerator/index_ref.html" class="success1 link_text"><strong>View Details</strong> </a>  
+                </div> 
+            </div>
+        </div>
+</div>
+
+
+<!---button--->
+    
+
+<div class="containeer">
+    <a href="../mobile/index_mob.html" class="success1 hov1"><h6>*click on image</h6> </a>  
+</div> 
+
+<!--short discription-->
+<div class="tag margin_p">
+    <h1>LG Provides you the best Quality product with proper discount.</h1>
+    <h4>We are providing you the best quality of products with home delievery with full warranty<br>Browse with ease,Shop with confidence.</h4>.</p>
+</div> 
+
+<!--AC/COLLER slider-->
+
+<div id="carouselExampleInterval" class="carousel slide " data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="2000">
+        <img src="land1.jpg" class="d-block w-100 land_mov_height margin_slider" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="land2.jpg" class="d-block w-100 land_mov_height margin_slider" alt="...">
+      </div>
+      <div class="carousel-item " data-bs-interval="2000">
+        <img src="land3" class="d-block w-100 land_mov_height margin_slider" alt="...">
+      </div>
+    </div>
+  
+</div>
+
+<!---------------------------------------------------------BOTTOM PIC------------------------------------------------------------------>
+
+
+
+
+
+
+<!---------------------------------------------------------SAFTEY CARD--------------------------------------------------------------->
+    
+    
+<!---------------------------------------------------------CONTACT CARD-------------------------------------------------------------------->
+   
+<div class="tag">
+    <h1>Browse with Ease, Shop with Confidence</h1>
+</div>
+
+<div class="contact">
+    <div class="contact_card ">
+         <img src="installation_icon.png" class="icon2" alt="...">
+         <h3 class="head hove push">LG Certified Installation </h3>
+         <p>  Once you place order on LG.com your<br> installation request will be generated post<br> delivery and our expert engineers<br> will guide you through user manual.</p>
+    </div>
+    <div class="contact_card "> 
+         <img src="secure_icon.png" class="icon2" alt="...">
+         <h3 class="head hove push">Secure Payments</h3>
+         <p> Your Data security & privacy is our priority.<br> Pay securely through 128 bit encrypted pay-<br>ment gateway. We support credit cards, <br>net banking and debits cards.</p>
+    </div>
+    <div class="contact_card "> 
+            <img src="exclusive_icon.png" class="icon2" alt="...">
+            <h3 class="head hove push">Exclusive Offers</h3>
+            <p>Now enjoy the benefits of LG exclusive <br>offers. Subscribe LG.com to remain updat-<br>ed on latest offers.</p>
+    </div>
+
+
+        <div class="contact_card"> 
+            <img src="freeshipping_icon.png" class="icon2" alt="...">
+            <h3 class="head hove push">Free Shipping</h3>
+            <p> Avail Free & Safe shipping in serviceable <br>pin codes, whenever you shop from <a class="link_text">https://www.lg.com/in </a> We take pride in<br> delivering most of our orders on priority.</p>
+        </div>
+</div>
+
+    <footer class="footer">
+        <div class="row row-cols-1 row-cols-md-5 g-4">
+          
+          
+            <div class="col">
+                <div class="card h-100 border2 c c2">
+                  <h5 class="card-text text text2">  Noida,India </h5>
+                  <h5 class="card-text text text2 hov"> cac.service@lgepartner.com</h5>
+                  <h5 class="card-text text text2 hov"> 1800-180-3575</h5>
+                </div>
+              </div>
+            <div class="col ">
+              <div class="card h-100 border2 c">
+                  <h4 class="card-title text1"> TV/Audio</h4>
+                  <p class="card-text text " ><a class="hov" href="../TV/index_tv.html">  TVs</p></a>
+                  <p class="card-text text "> <a class="hov" href="../TV/index_tv.html">  Audio</p></a>
+                  <p class="card-text text "> <a class="hov" href="../TV/index_tv.html">   Projectors</p></a>
+                  <p class="card-text text "> <a class="hov" href="../TV/index_tv.html">   TV Accessories</p></a>
+                </div>
+              </div>
+
+
+            <!---------------------------------------link home appliance ka add krna h--------------------------------------->
+            
+            
+            <div class="col">
+                <div class="card h-100 border2 c">
+                    <h4 class="card-title text1">  Categories</h4>
+                    <p class="card-text text "> <a class="hov" href="../homeAppliances/index_app.html"> Home Appliances</p></a>
+                    <p class="card-text text "><a class="hov" href="../refrigerator/index_ref.html">  Refrigerators</p></a>
+                    <p class="card-text text ">  <a class="hov" href="../homeAppliances/index_app.html">  Washing Machines</p></a>
+                    <p class="card-text text ">  <a class="hov" href="../coller/index_cooler.html">  Air Care</p></a>
+                    <p class="card-text text "> <a class="hov" href="../homeAppliances/index_app.html">  Water Purifiers</p></a>
+                    <p class="card-text text "> <a class="hov" href="../homeAppliances/index_app.html"> Microwave Ovens</p></a>
+                    <p class="card-text text ">  <a class="hov" href="../homeAppliances/index_app.html">Dishwashers</p></a>
+                    <p class="card-text text "> <a class="hov" href="../homeAppliances/index_app.html">  Vacuum Cleaners</p></a>
+                    <p class="card-text text "> <a class="hov" href="../homeAppliances/index_app.html"> stylers
+                    </p></a>
+                  </div>
+             
+             <!------------------------------------------Laptop/MOnitor code update----------------------------------------->
+                </div>
+            <div class="col">
+              <div class="card h-100 border2 c">
+                  <h4 class="card-title text1"> Laptop & Monitor</h4>
+                  <p class="card-text text "> <a class="hov" href="../mobile/index_mob.html"> Monitors  </p></a>
+                  <p class="card-text text ">  <a class="hov" href="../mobile/index_mob.html">  Computers</p></a>
+                  <p class="card-text text "> <a class="hov" href="../mobile/index_mob.html">  Projectors</p></a>
+                  <p class="card-text text "> <a class="hov" href="../mobile/index_mob.html"> CineBeam</p></a>
+                  <p class="card-text text "> <a class="hov" href="../mobile/index_mob.html"> CineBeam Laser</p></a>
+                </div>
+              </div>
+
+
+           
+            <div class="col">
+              <div class="card h-100 border2 c">
+                <h4 class="card-title text1"> About LG</h4>
+                <p class="card-text text "> <a class="hov" href="https://www.lg.com/in/about-lg/press-and-media"> Press Release</p></a> 
+                <p class="card-text text "> <a class="hov" href="https://www.lg.com/in/lg-corporate-social-responsibility"> Corporate Socia Responsibility</p></a>
+                    <p class="card-text text "> <a class="hov" href="https://www.lg.com/in/about-lg/press-and-media/media-contacts">  Media Contacts</p></a>
+                    <p class="card-text text "> <a class="hov" href="https://www.lg.com/in/about-lg/careers"> Careers</p></a>
+              </div>
+            </div>
+            </div>     
+       
+    </footer>
+    <div class="copyright">
+     <p class="copyright_text">Copyright © 2009-2023 LG Electronics. All Rights Reserved @Nitish kumar</p>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+<script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+   window.onscroll = ()=>{
+      this.scrollY > -50? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+</body>
+
+</html>
